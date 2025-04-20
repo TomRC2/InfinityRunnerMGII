@@ -4,11 +4,11 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
     public Text timerText;
-    private float timeElapsed;
+    public float elapsedTime;
 
     void Update()
     {
-        timeElapsed += Time.deltaTime;
-        timerText.text = timeElapsed.ToString("F3") + " s";
+        elapsedTime += Time.deltaTime;
+        timerText.text = elapsedTime.ToString("F3") + " s";
     }
 }
